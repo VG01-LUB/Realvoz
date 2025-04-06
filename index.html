@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RealVoz - Histórias Reais</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1faee;
+      color: #1d3557;
+    }
+    header {
+      background-color: #1d3557;
+      color: #f1faee;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .story {
+      background-color: white;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .story h2 {
+      margin: 0 0 0.5rem 0;
+    }
+    .form-section {
+      background-color: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    form input, form select, form textarea, form button {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    form button {
+      background-color: #a4161a;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #831217;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RealVoz</h1>
+    <p>Histórias reais contadas por pessoas como você</p>
+  </header>
+
+  <div class="container">
+    <div class="story">
+      <h2>"O ônibus que atrasou salvou minha vida"</h2>
+      <p><strong>Categoria:</strong> Coincidências Inacreditáveis</p>
+      <p>Naquele dia, o ônibus atrasou 7 minutos. Se tivesse passado no horário, eu estaria naquele cruzamento onde tudo aconteceu...</p>
+    </div>
+
+    <div class="form-section">
+      <h2>Envie sua história</h2>
+      <form action="https://formsubmit.co/SEUEMAILAQUI" method="POST">
+        <input type="text" name="nome" placeholder="Seu nome ou apelido (opcional)">
+        <select name="categoria">
+          <option value="">Escolha uma categoria</option>
+          <option>Superação</option>
+          <option>Amor & Desilusão</option>
+          <option>Coincidências Inacreditáveis</option>
+          <option>Espiritualidade</option>
+          <option>Vergonha ou Curiosidade</option>
+        </select>
+        <textarea name="historia" rows="6" placeholder="Conte sua história real aqui..."></textarea>
+        <input type="text" name="audio" placeholder="Link para áudio (opcional)">
+        <button type="submit">Enviar história</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 RealVoz | Projeto digital de histórias reais
+  </footer>
+</body>
+</html>
