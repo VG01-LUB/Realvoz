@@ -80,6 +80,24 @@
 
   <div class="container">
     <div class="story">
+      <h2>"Quando perdi o ônibus e encontrei minha vó"</h2>
+      <p><strong>Categoria:</strong> Coincidências Inacreditáveis</p>
+      <p>Eu estava atrasado, irritado por ter perdido o ônibus. Decidi voltar a pé pra casa e, no caminho, cruzei com minha avó que eu não via há mais de 2 anos. Ela estava exatamente naquele bairro por engano. Aquele atraso virou um reencontro inesquecível.</p>
+    </div>
+
+    <div class="story">
+      <h2>"Ela me deixou na porta da igreja"</h2>
+      <p><strong>Categoria:</strong> Amor & Desilusão</p>
+      <p>Nos conhecemos na escola, crescemos juntos. No dia do nosso casamento, com tudo pronto, ela não apareceu. Só deixou uma carta dizendo que precisava se encontrar antes de se entregar. Foi o pior dia da minha vida, mas também o início de uma nova fase.</p>
+    </div>
+
+    <div class="story">
+      <h2>"Levantei da cama e andei de novo"</h2>
+      <p><strong>Categoria:</strong> Superação</p>
+      <p>Depois de um acidente de moto, disseram que eu não andaria mais. Eu não aceitei. Com fisioterapia, fé e muita dor, dei meu primeiro passo 8 meses depois. Hoje, corro maratonas. E ainda guardo a bengala como lembrança da luta.</p>
+    </div>
+
+    <div class="story">
       <h2>"O ônibus que atrasou salvou minha vida"</h2>
       <p><strong>Categoria:</strong> Coincidências Inacreditáveis</p>
       <p>Naquele dia, o ônibus atrasou 7 minutos. Se tivesse passado no horário, eu estaria naquele cruzamento onde tudo aconteceu...</p>
@@ -107,5 +125,22 @@
   <footer>
     &copy; 2025 RealVoz | Projeto digital de histórias reais
   </footer>
+
+<div class="donate" style="text-align: center; margin-top: 40px;">
+  <h3>Gostou do projeto? Apoie com um Pix!</h3>
+  <p>Chave Pix: <strong>realvozpix@gmail.com</strong></p>
+  <button onclick="copyPixKey()" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">
+    Copiar chave Pix
+  </button>
+  <p id="copyMsg" style="color: green; display: none; margin-top: 10px;">Chave copiada!</p>
+</div>
+
+<script>
+  function copyPixKey() {
+    navigator.clipboard.writeText("realvozpix@gmail.com");
+    document.getElementById("copyMsg").style.display = "block";
+  }
+</script>
+
 </body>
 </html>
