@@ -1,146 +1,149 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RealVoz - Histórias Reais</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Voz</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f1faee;
-      color: #1d3557;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5e7d2;
+      color: #3b2f2f;
     }
     header {
-      background-color: #1d3557;
-      color: #f1faee;
-      padding: 2rem;
+      background-color: #8b3a3a;
+      padding: 20px;
+      color: white;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-    }
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
-    }
-    .story {
-      background-color: white;
-      border-radius: 10px;
-      padding: 1rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    .story h2 {
-      margin: 0 0 0.5rem 0;
-    }
-    .form-section {
-      background-color: white;
-      border-radius: 10px;
-      padding: 1.5rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    form input, form select, form textarea, form button {
-      width: 100%;
-      margin-top: 1rem;
-      padding: 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 1rem;
-    }
-    form button {
-      background-color: #a4161a;
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
       color: white;
       font-weight: bold;
+    }
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .cta-button {
+      padding: 10px 20px;
+      background-color: #6b2e1f;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
       cursor: pointer;
     }
-    form button:hover {
-      background-color: #831217;
+    .form-section, .stories-section {
+      background-color: #fff;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 40px auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    form label {
+      display: block;
+      margin-top: 15px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+    form button {
+      margin-top: 20px;
+      background-color: #8b3a3a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .story-card {
+      background-color: #fdfaf6;
+      border-left: 5px solid #8b3a3a;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    .story-card h3 {
+      margin: 0 0 10px;
     }
     footer {
       text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #999;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #555;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>RealVoz</h1>
-    <p>Histórias reais contadas por pessoas como você</p>
+    <h1>Real Voz</h1>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#enviar">Envie sua história</a>
+      <a href="#historias">Histórias</a>
+    </nav>
   </header>
 
-  <div class="container">
-    <div class="story">
-      <h2>"Quando perdi o ônibus e encontrei minha vó"</h2>
-      <p><strong>Categoria:</strong> Coincidências Inacreditáveis</p>
-      <p>Eu estava atrasado, irritado por ter perdido o ônibus. Decidi voltar a pé pra casa e, no caminho, cruzei com minha avó que eu não via há mais de 2 anos. Ela estava exatamente naquele bairro por engano. Aquele atraso virou um reencontro inesquecível.</p>
-    </div>
+  <section class="hero" id="inicio">
+    <h1>Histórias reais. Pessoas de verdade.</h1>
+    <p>Um espaço para compartilhar, emocionar e escutar com o coração.</p>
+    <button class="cta-button" onclick="document.getElementById('enviar').scrollIntoView({behavior: 'smooth'})">Compartilhe a sua história</button>
+  </section>
 
-    <div class="story">
-      <h2>"Ela me deixou na porta da igreja"</h2>
-      <p><strong>Categoria:</strong> Amor & Desilusão</p>
-      <p>Nos conhecemos na escola, crescemos juntos. No dia do nosso casamento, com tudo pronto, ela não apareceu. Só deixou uma carta dizendo que precisava se encontrar antes de se entregar. Foi o pior dia da minha vida, mas também o início de uma nova fase.</p>
-    </div>
+  <section class="form-section" id="enviar">
+    <h2>Envie sua história</h2>
+    <form>
+      <label for="nome">Nome (opcional)</label>
+      <input type="text" id="nome" name="nome" />
 
-    <div class="story">
-      <h2>"Levantei da cama e andei de novo"</h2>
-      <p><strong>Categoria:</strong> Superação</p>
-      <p>Depois de um acidente de moto, disseram que eu não andaria mais. Eu não aceitei. Com fisioterapia, fé e muita dor, dei meu primeiro passo 8 meses depois. Hoje, corro maratonas. E ainda guardo a bengala como lembrança da luta.</p>
-    </div>
+      <label for="cidade">Cidade/Estado (opcional)</label>
+      <input type="text" id="cidade" name="cidade" />
 
-    <div class="story">
-      <h2>"O ônibus que atrasou salvou minha vida"</h2>
-      <p><strong>Categoria:</strong> Coincidências Inacreditáveis</p>
-      <p>Naquele dia, o ônibus atrasou 7 minutos. Se tivesse passado no horário, eu estaria naquele cruzamento onde tudo aconteceu...</p>
-    </div>
+      <label for="historia">Sua história</label>
+      <textarea id="historia" name="historia" rows="6" required></textarea>
 
-    <div class="form-section">
-      <h2>Envie sua história</h2>
-      <form action="https://formsubmit.co/SEUEMAILAQUI" method="POST">
-        <input type="text" name="nome" placeholder="Seu nome ou apelido (opcional)">
-        <select name="categoria">
-          <option value="">Escolha uma categoria</option>
-          <option>Superação</option>
-          <option>Amor & Desilusão</option>
-          <option>Coincidências Inacreditáveis</option>
-          <option>Espiritualidade</option>
-          <option>Vergonha ou Curiosidade</option>
-        </select>
-        <textarea name="historia" rows="6" placeholder="Conte sua história real aqui..."></textarea>
-        <input type="text" name="audio" placeholder="Link para áudio (opcional)">
-        <button type="submit">Enviar história</button>
-      </form>
+      <label><input type="checkbox" required /> Aceito os termos de uso</label>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section class="stories-section" id="historias">
+    <h2>Histórias publicadas</h2>
+    <div class="story-card">
+      <h3>“Recomecei depois dos 60”</h3>
+      <p>Depois de uma grande perda, encontrei forças para mudar de cidade e começar do zero. Hoje, sou feliz vivendo a minha verdade.</p>
     </div>
-  </div>
+    <div class="story-card">
+      <h3>“Minha filha me ensinou o que é coragem”</h3>
+      <p>Quando ela nasceu com uma condição rara, o mundo virou do avesso. Mas juntos aprendemos a lutar e amar ainda mais.</p>
+    </div>
+    <div class="story-card">
+      <h3>“Venci o silêncio”</h3>
+      <p>Por anos escondi minha história com vergonha. Hoje, conto com orgulho e vejo como ela inspira outras pessoas.</p>
+    </div>
+  </section>
 
   <footer>
-    &copy; 2025 RealVoz | Projeto digital de histórias reais
+    &copy; 2025 Real Voz. Todos os direitos reservados.
   </footer>
-
-<div class="donate" style="text-align: center; margin-top: 40px;">
-  <h3>Gostou do projeto? Apoie com um Pix!</h3>
-  <p>Chave Pix: <strong>realvozpix@gmail.com</strong></p>
-  <button onclick="copyPixKey()" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">
-    Copiar chave Pix
-  </button>
-  <p id="copyMsg" style="color: green; display: none; margin-top: 10px;">Chave copiada!</p>
-</div>
-
-<script>
-  function copyPixKey() {
-    navigator.clipboard.writeText("realvozpix@gmail.com");
-    document.getElementById("copyMsg").style.display = "block";
-  }
-</script>
-
 </body>
 </html>
